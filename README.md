@@ -23,7 +23,8 @@ on it.
    a calibrated churn label (~17.5% churn rate, in line with real
    healthcare attrition ranges). No real patient data is used.
 2. **Runs exploratory data analysis** — churn rate by insurance type,
-   contact-recency distributions, and a feature correlation heatmap.
+   contact-recency distributions, and a feature correlation heatmap (see
+   screenshots below).
 3. **Engineers features** — missed-appointment rate, low-engagement flags,
    and contact-gap risk flags on top of the raw utilization data.
 4. **Trains and compares three models** — Logistic Regression, Random
@@ -34,6 +35,12 @@ on it.
 6. **Scores new patients** — a standalone inference script that takes a
    CSV of patient records and returns churn probabilities, ranked
    highest-risk first.
+
+## Exploratory data analysis
+
+| Churn rate by insurance type | Contact-recency distribution | Feature correlation heatmap |
+|---|---|---|
+| ![Churn by insurance](reports/figures/churn_by_insurance.png) | ![Days since contact](reports/figures/days_since_contact_dist.png) | ![Correlation heatmap](reports/figures/correlation_heatmap.png) |
 
 ## Results
 
